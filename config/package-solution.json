@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "cookie-co-intranet-client-side-solution",
+    "id": "e8a6ff11-8a18-46f1-bcca-8f63de426988",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.23.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "cookie-co-intranet description"
+      },
+      "longDescription": {
+        "default": "cookie-co-intranet description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "cookie-co-intranet Feature",
+        "description": "The feature that activates elements of the cookie-co-intranet solution.",
+        "id": "d10944b0-426d-4f18-8991-fbc6731372e0",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/cookie-co-intranet.sppkg"
+  }
+}

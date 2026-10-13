@@ -1,0 +1,23 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "whichFolder": "subdir",
+    "solutionName": "cookie-co-intranet",
+    "environment": "spo",
+    "packageManager": "npm",
+    "useGulp": false,
+    "componentType": "webpart",
+    "template": "react",
+    "componentName": "Hero",
+    "componentDescription": "Cookie Co Intranet home page hero",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.23.1",
+    "sdksVersions": {},
+    "version": "1.23.0",
+    "libraryName": "cookie-co-intranet",
+    "libraryId": "e8a6ff11-8a18-46f1-bcca-8f63de426988",
+    "solutionShortDescription": "cookie-co-intranet description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false
+  }
+}
