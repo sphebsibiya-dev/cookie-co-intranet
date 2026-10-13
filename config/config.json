@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/hero/HeroWebPart.manifest.json"
         }
       ]
+    },
+    "countdown-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/countdown/CountdownWebPart.js",
+          "manifest": "./src/webparts/countdown/CountdownWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "HeroWebPartStrings": "lib/webparts/hero/loc/{locale}.js"
+    "HeroWebPartStrings": "lib/webparts/hero/loc/{locale}.js",
+    "CountdownWebPartStrings": "lib/webparts/countdown/loc/{locale}.js"
   }
 }

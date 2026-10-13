@@ -4,6 +4,16 @@ Running log of decisions made during the build. Newest first. Add a dated entry 
 
 ---
 
+## 2026-10-13 — Countdown web part built
+
+`src/webparts/countdown/`: red band with headline/subtext and a days/hrs/min/sec timer, per the mockup. Reuses the Hero patterns (no web font, no CDN, inline styles from the same palette).
+
+1. **Target date is an ISO 8601 text field** (e.g. `2026-09-20T08:00:00+02:00`) with validation, rather than a PnP date/time picker — same "no new dependency" reasoning as the Hero image URL.
+2. **Default target is the mockup's 2026-09-20 date, which has already passed**, so a freshly added web part shows the "finished" text ("We're open!") until an editor sets a new date.
+3. **Palette constants are now duplicated** in `Hero.module.scss` and `Countdown.module.scss`; extract to `src/common/styles/_tokens.scss` before or with the next web part.
+
+Compiles cleanly (`npx heft build`); not yet checked visually in the workbench.
+
 ## 2026-09-15 — Hero web part built
 
 Replaced the generator's placeholder content in `src/webparts/hero/` with the real banner from the mockup (tag, headline, subtext, CTA button, background image), configurable via the property pane. Three implementation decisions worth carrying forward to the next web part:

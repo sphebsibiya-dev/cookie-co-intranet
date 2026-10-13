@@ -27,7 +27,7 @@ The mockup's home page reads top to bottom as:
 |---|---|---|---|
 | 1 | Header: logo, nav, search, "Quick links" button | Top navigation (§7) | Native SharePoint nav + custom header/search web part, or theming of the standard suite bar |
 | 2 | Hero: "Choc Chip Supreme is coming" | Hero (§6.1) | **Built** — `src/webparts/hero/`. Configurable via the property pane (tag, headline, subtext, button label/link, background image URL); falls back to a brand-colour gradient when no image is set. Defaults match the mockup's copy. |
-| 3 | Countdown to launch (red band, live timer) | Not in design brief — mockup addition | Custom SPFx web part (client-side countdown against a configurable target date) |
+| 3 | Countdown to launch (red band, live timer) | Not in design brief — mockup addition | **Built** — `src/webparts/countdown/`. React component ticking every second against a `targetDate` property (ISO 8601 with offset, validated in the property pane); headline, subtext and "finished" text are also configurable. Defaults match the mockup. Not yet verified in the workbench. |
 | 4 | Quick links grid (Recipes & specs / Store ops / Marketing / People & HR) | Pillar shortcuts (§6.1) | Quick Links web part, 4 icon tiles |
 | 5 | News + Documents two-column | Latest updates (§6.1) + Recipes & Specs hub pattern (§6.2) | News web part (list-backed) + a document-library card list |
 | 6 | Launch pack product cards | Recipes & Specs hub card anatomy (§6.2) | Card grid web part, circle-cropped images |
